@@ -1,0 +1,9 @@
+PROGRAM TestSum;
+VAR x: CHAR;
+    y: integer;
+    z: integer;
+BEGIN
+    x := 'a';
+    y := 20;
+    z := sum x, y, 30;
+END.

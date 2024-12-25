@@ -1,0 +1,14 @@
+PROGRAM SwapTest;
+VAR x: INTEGER;
+    y: Integer;
+    z: integer;
+
+BEGIN
+    x := 5;
+    y := 10;
+    x, y := y, x, z;  (* Swap values using multiple assignment *)
+    CALL WRITEI(x); (* Should print 10 *)
+    CALL WRITELN;
+    CALL WRITEI(y); (* Should print 5 *)
+    CALL WRITELN;
+END.

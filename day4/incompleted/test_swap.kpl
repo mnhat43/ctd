@@ -1,0 +1,14 @@
+PROGRAM SwapTest;
+VAR x: INTEGER;
+    y: INTEGER;
+    z: INTEGER;
+
+BEGIN
+    x := 5;
+    y := 10;
+    x, y, z := y, x;  (* match *)
+    CALL WRITEI(x); (* Should print 10 *)
+    CALL WRITELN;
+    CALL WRITEI(y); (* Should print 5 *)
+    CALL WRITELN;
+END.
